@@ -15,19 +15,17 @@ public class StreamMain {
         printArray(a);
 
         int k = 0;
-        for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a.length; j++) {
-                if (a[i] > k && a[i] % 2 == k) {
-                    int b = a[i];
+                if (a[j] > k && a[j] % 2 == k) {
+                    int b = a[j];
                     c[j] = b;
-                    Arrays.sort(c);
-                    System.out.print(b + " ");
                 }
             }
+            Arrays.sort(c);
+            printArray(c);
         }
-        System.out.print(Arrays.toString(c) + " ");
-    }
-        public static void printArray ( int[] arr){
+
+    public static void printArray ( int[] arr){
             for (int i = 0; i < arr.length; i++) {
                 System.out.print(arr[i] + " ");
             }
