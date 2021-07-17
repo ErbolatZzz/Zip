@@ -1,9 +1,6 @@
 package HWStream1;
-
 import java.util.*;
-
 public class StreamMain {
-
     public static void main(String[] args) {
 
         int[] a = {1, 2, 5, 16, -1, -2, 0, 32, 3, 5, 8, 23, 4};
@@ -22,7 +19,6 @@ public class StreamMain {
 
     public static void printArray ( int[] arr){
         for (int i = 0; i < arr.length; i++) {
-
             System.out.print(arr[i] + " ");
         }
         System.out.println();
